@@ -60,14 +60,3 @@ class TaskManger{
 }
 
 
-const manager = new TaskManger();
-manager.loadFromStorage()
-
-manager.addTask("Study JS", "Finish OOP section");
-manager.addTask("Workout", "Run for 20 minutes");
-
-console.log(manager.listTasks());
-
-manager.toggleComplete(manager.tasks[0].id);
-
-console.log(manager.listTasks());
